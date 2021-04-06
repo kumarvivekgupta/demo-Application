@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content:space-between;
+
+    &__options{
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__user{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.image{
+    width: 60px;
+    height: 60px;
+
+}

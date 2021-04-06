@@ -1,0 +1,63 @@
+<div class="application-list">
+
+
+
+    <div style="display:flex;flex-direction:row;width:85vw;margin :0 auto">
+        <ul style="display:flex;flex-direction: row;justify-content: space-between;width: 30vw;margin: 0 auto;">
+            <li *ngFor="let subtask of task?.subtasks">
+                    <mat-checkbox>
+                      {{subtask.name}}
+                    </mat-checkbox>
+                  </li>
+                  </ul>
+       
+                  <mat-form-field class="example-form-field" appearance="standard">
+                        
+                        <input matInput type="text"  [(ngModel)]="value">
+                        <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="searchApiCall()">
+                                <i class="fa fa-close"></i>
+                        </button>
+                      </mat-form-field>
+
+    </div>
+       
+
+    <mat-card class="card">
+        <mat-card-header>
+            <h1 style="width:50vw;margin-left:5vw">Title</h1>
+            <div class="icons">
+                         <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                                <i class="fa fa-share-alt"></i>
+                          </button>
+                          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                                <i class="fa fa-share-alt"></i>
+                          </button>
+                          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                                <i class="fa fa-share-alt"></i>
+                          </button>
+            </div>
+        </mat-card-header>
+
+        <mat-card-content class="card-content">
+            <img class="image" src="https://image.shutterstock.com/image-vector/internet-design-logoicon-template-600w-1037418430.jpg" />
+            <div class="company-header">
+                
+                        <p class="company-name">Company Name<span>|</span><span>Location</span><span>|</span><span>0-2 yrs</span></p>
+                
+                <div class="skill-list">
+                    <p>Skills :</p>
+                    <span *ngFor="let skill of skillList"> {{skill}},</span>
+                </div>
+            
+            </div>
+        
+
+        </mat-card-content>
+
+        <mat-card-footer class="card-footer">
+            <button mat-raised-button>Apply</button>
+        </mat-card-footer>
+
+
+    </mat-card>
+</div>

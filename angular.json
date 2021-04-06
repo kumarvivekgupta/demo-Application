@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-application"
+    }
+  },
+  "defaultProject": "demo-application",
+  "cli": {
+    "analytics": false
+  }
 }
