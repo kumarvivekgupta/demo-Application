@@ -1,3 +1,5 @@
+@import 'src/app/core/styles/colors';
+
 .image{
     width: 100px;
     height: 100px;
@@ -6,12 +8,17 @@
 .company-name{
     display: flex;
     flex-direction: row;
+
+    span{
+        margin: 0 10px;
+    }
 }
 .card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 $primary;
   transition: 0.3s;
   width: 75vw;
   margin: 40px auto;
+  background: white;
 }
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -21,10 +28,14 @@
   display: flex;
   flex-direction: column;
   width: 70vw;
+  justify-content: center;
 }
 .skill-list{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    span{
+        margin: 0 5px;
+    }
 }
 .card-content{
     display: flex;
@@ -37,21 +48,38 @@ p{
     width: 75vw;
     text-align: end;
     margin-bottom: 20px;
+
+    button{
+        background: white;
+        color:$primary;
+    }
 }
 .icons{
     display: flex;
     flex-direction: row;
-    width: 8vw;
+    width: 15vw;
     justify-content: space-between;
-  button{
-      height: 30px;
-  }
+    button{
+        border: 1px solid $primary;
+    }
+  
 }
 
 .example-form-field {
     width: 150px;
+  //  background: white;
+
+  
   }
 
   .application-list{
       margin-top: 20px;
+  }
+
+  .checkbox{
+      color:$primary;
+
+      ::ng-deep .mat-checkbox-layout .mat-checkbox-inner-container .mat-checkbox-frame{
+          border-style:hidden;
+      }
   }

@@ -1,7 +1,19 @@
+@import 'src/app/core/styles/colors';
+
+
 .footer{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     width: 90vw;
     margin: 0 auto;
+    color: $primary;
+
+    span{
+        margin: 0 10px;
+    }
+}
+
+.sidenav-content{
+    background: $secondary;
 }

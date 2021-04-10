@@ -1,17 +1,57 @@
+@import 'src/app/core/styles/colors';
+
 .header{
     display: flex;
     flex-direction: row;
-    width: 90vw;
+    width: 100vw;
     justify-content:space-between;
 
     &__options{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        h2 {
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            cursor: pointer;
+            justify-content: center;
+            min-width: 200px;
+            color:$primary;
+        }
+        h2:hover {
+            background-color: $primary;
+            color:white;
+          }
     }
 
     &__user{
         display: flex;
         flex-direction: row;
+        h2{
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            cursor: pointer;
+            justify-content: center;
+            min-width: 100px;
+            color: $primary;
+        }
+        h2:hover {
+            background-color: $primary;
+            color:white;
+          }
+
+        button{
+            height:52px;
+            align-self:center;
+            margin-right: 30px;
+            background: $secondary;
+            color:$primary;
+
+        }
     }
 }
 .image{

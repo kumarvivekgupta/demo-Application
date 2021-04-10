@@ -27,6 +27,8 @@ export class ApplicantsListComponent implements OnInit{
         ]
       };
       value="Clear me";
+
+      arrayJobs=new Array(4);
     
 
     constructor(){}

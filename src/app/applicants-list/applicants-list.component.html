@@ -4,8 +4,8 @@
 
     <div style="display:flex;flex-direction:row;width:85vw;margin :0 auto">
         <ul style="display:flex;flex-direction: row;justify-content: space-between;width: 30vw;margin: 0 auto;">
-            <li *ngFor="let subtask of task?.subtasks">
-                    <mat-checkbox>
+            <li *ngFor="let subtask of task?.subtasks" style="color:white">
+                    <mat-checkbox class="checkbox">
                       {{subtask.name}}
                     </mat-checkbox>
                   </li>
@@ -20,11 +20,15 @@
                       </mat-form-field>
 
     </div>
+
+    <ng-container *ngFor="let i of arrayJobs">
+
+   
        
 
     <mat-card class="card">
         <mat-card-header>
-            <h1 style="width:50vw;margin-left:5vw">Title</h1>
+            <h1 style="width:50vw;margin-left:5vw">Job Title</h1>
             <div class="icons">
                          <button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
                                 <i class="fa fa-share-alt"></i>
@@ -55,9 +59,11 @@
         </mat-card-content>
 
         <mat-card-footer class="card-footer">
-            <button mat-raised-button>Apply</button>
+            <button mat-stroked-button>Apply</button>
         </mat-card-footer>
 
 
     </mat-card>
+
+</ng-container>
 </div>
